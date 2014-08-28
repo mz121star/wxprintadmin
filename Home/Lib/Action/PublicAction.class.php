@@ -5,7 +5,7 @@ class PublicAction extends Action {
     protected $userInfo = array();
 
     public function __construct(){
-        if(MODULE_NAME!=viewprinter){
+        if(ACTION_NAME!="viewprinter"){
             $this->userInfo = session('userinfo');
             if(empty($this->userInfo) || $this->userInfo['user_type'] == 3){
                 $this->display('Index:showlogin');
