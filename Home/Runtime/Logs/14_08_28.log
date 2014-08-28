@@ -1,0 +1,233 @@
+[ 2014-08-28T16:28:07+08:00 ] 127.0.0.1 /index.php/Printer/lists
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.005255s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005341s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000661s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_print` LIMIT 1   [ RunTime:0.000087s ]
+SQL: SELECT * FROM `wx_print` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000042s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000270s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014712s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000172s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000164s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000105s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2014-08-28T16:34:59+08:00 ] 127.0.0.1 /index.php/Printer/lists
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000438s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000659s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_print` LIMIT 1   [ RunTime:0.000065s ]
+SQL: SELECT * FROM `wx_print` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000046s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000209s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004814s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000154s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000153s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000086s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000268s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-08-28T16:44:01+08:00 ] 127.0.0.1 /index.php/modprinter/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000418s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000486s ]
+SQL: SELECT * FROM `wx_print` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000170s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000205s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004397s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000176s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000172s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000100s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000322s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2014-08-28T16:44:05+08:00 ] 127.0.0.1 /index.php/Printer/lists
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000454s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000493s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_print` LIMIT 1   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `wx_print` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000038s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000145s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000180s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005208s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000197s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000156s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000090s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000289s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2014-08-28T16:55:41+08:00 ] 127.0.0.1 /index.php/downprinter/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000430s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000616s ]
+SQL: SELECT * FROM `wx_print` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000058s ]
+
+[ 2014-08-28T16:56:44+08:00 ] 127.0.0.1 /index.php/downprinter/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000452s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000758s ]
+SQL: SELECT * FROM `wx_print` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000059s ]
+
+[ 2014-08-28T16:56:45+08:00 ] 127.0.0.1 /index.php/downprinter/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000473s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000657s ]
+SQL: SELECT * FROM `wx_print` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000061s ]
+
+[ 2014-08-28T16:56:45+08:00 ] 127.0.0.1 /index.php/downprinter/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000544s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000583s ]
+SQL: SELECT * FROM `wx_print` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000057s ]
+
+[ 2014-08-28T16:58:03+08:00 ] 127.0.0.1 /index.php/Printer/lists
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000443s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000582s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_print` LIMIT 1   [ RunTime:0.000077s ]
+SQL: SELECT * FROM `wx_print` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000045s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000201s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005544s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000377s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000164s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000093s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000302s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2014-08-28T17:01:24+08:00 ] ERR: (ThinkException) /var/www/shop/wxprintadmin/Public/upload/print.zip下载文件不存在！
+[ 2014-08-28T17:02:27+08:00 ] ERR: (ThinkException) /var/www/shop/wxprintadmin/Public/upload/print.zip下载文件不存在！
+[ 2014-08-28T17:02:38+08:00 ] 127.0.0.1 /index.php/downprinter/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000473s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000482s ]
+SQL: SELECT * FROM `wx_print` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+
+[ 2014-08-28T17:03:16+08:00 ] ERR: (ThinkException) /var/www/shop/wxprintadmin/Public/upload/print.zip下载文件不存在！
+[ 2014-08-28T17:05:10+08:00 ] 127.0.0.1 /index.php/Printer/lists
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000408s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_print` LIMIT 1   [ RunTime:0.000066s ]
+SQL: SELECT * FROM `wx_print` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000047s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000178s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004959s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000153s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000152s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000087s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000301s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2014-08-28T17:05:12+08:00 ] 127.0.0.1 /index.php/viewprinter/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000467s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `wx_print` [ RunTime:0.000591s ]
+SQL: SELECT * FROM `wx_print` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000053s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000206s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.003157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003212s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000160s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000147s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000095s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000306s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000340s ]
+

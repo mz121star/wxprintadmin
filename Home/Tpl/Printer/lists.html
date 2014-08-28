@@ -1,0 +1,25 @@
+<h2 class="sub-header">设备列表</h2>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>设备名称</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        <foreach name="printlist" item="printer">
+          <tr>
+            <td class="col-sm-2">{$printer.print_name}</td>
+            <td class="col-sm-2">
+                <a href="__GROUP__/viewprinter/{$printer.id}" target="_blank">预览</a> 
+                <a href="__GROUP__/downprinter/{$printer.id}">下载</a> 
+                <a href="__GROUP__/modprinter/{$printer.id}">编辑</a> 
+                <a href="__GROUP__/delprinter/{$printer.id}">删除</a>
+            </td>
+          </tr>
+        </foreach>
+        </tbody>
+      </table>
+      {$page}
+    </div>
