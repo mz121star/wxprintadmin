@@ -35,10 +35,12 @@ class PrinterAction extends PublicAction {
         $zipfile = $_SERVER['DOCUMENT_ROOT'].'/upload/print.zip';
         $formfile = $_SERVER['DOCUMENT_ROOT'].'/upload/form.exe';
         $configfile = $_SERVER['DOCUMENT_ROOT'].'/upload/config.txt';
+        $jsonfile = $_SERVER['DOCUMENT_ROOT'].'/upload/Newtonsoft.Json.dll';
         file_put_contents($configfile, $config_content);
         if ($zip->open($zipfile, ZipArchive::CREATE) ===  TRUE ) {
              $zip->addFile($formfile, 'form.exe');
              $zip->addFile($configfile, 'config.txt');
+            $zip->addFile($jsonfile, 'Newtonsoft.Json.dll');
              $zip->close ();
              import('ORG.Net.Http');
               Http::download($zipfile, 'print.zip');
