@@ -41,7 +41,7 @@ class PrinterAction extends PublicAction {
              $zip->addFile($configfile, 'config.txt');
              $zip->close ();
              import('ORG.Net.Http');
-            Http::download($zipfile, 'print.zip');
+              Http::download($zipfile, 'print.zip');
         } else {
             $this->error('下载失败', 'lists') ;
         }
