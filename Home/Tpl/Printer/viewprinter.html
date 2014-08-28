@@ -17,7 +17,7 @@
   <style>
       .lunbo{}
 
-      .lunbo li{list-style: none}
+      .lunbo li{list-style: none; float: left;  position: absolute;}
       .lunbo li img{}
   </style>
 
@@ -53,6 +53,15 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/css/bootstrap.min.js"></script>
 
+<script>
+    var pics=$(".lunbo li");
+    $.each(pics,function(i,item){
+        setInterval(function(){
+            $(pics).hide();
+            $(item).show(2000);
+        },10000);// 注意函数名没有引号和括弧！
 
+    })
+</script>
 </body>
 </html>
