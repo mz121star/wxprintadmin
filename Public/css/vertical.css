@@ -1,16 +1,16 @@
 .left {
-    width: 70%;
+    width: 100%;
     top: 0px;
-    float: left;
-    height: 100%;
-    position: absolute;
+    /* float: left; */
+    /* height: 100%; */
+    /* position: absolute; */
 }
 .right {
-    width: 28%;
+    width: 100%;
     /* border: 1px solid #aa2a4b; */
-    height: 100%;
-    float: right;
-    position: fixed;
+    /* height: 100%; */
+    /* float: right; */
+    /* position: fixed; */
     right: 0;
     top: 0px;
 }

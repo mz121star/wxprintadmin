@@ -15,7 +15,7 @@
     <!-- Bootstrap core CSS -->
 <!--    <link href="/css/bootstrap.min.css" rel="stylesheet">-->
 
-    <link href="/css/horizontal.css" rel="stylesheet">
+    <link  href="/css/horizontal.css" rel="stylesheet" id="hs">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -97,6 +97,10 @@
        }
     },1000);
 
+    var hs=$.getUrlParam("hs");
+    if(hs==2){
+        $("#hs").attr("href","/css/vertical.css")
+    }
 
 </script>
 </body>
