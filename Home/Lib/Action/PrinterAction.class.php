@@ -30,7 +30,7 @@ class PrinterAction extends PublicAction {
         $print = M("print");
         $printinfo = $print->where('id='.$pid)->find();
         $url = 'http://'.$_SERVER['SERVER_NAME'].'/index.php/viewprinter/'.$pid;
-        $config_content = $url.'?deviceid='.$this->_get("deviceid").','.$printinfo['print_name'];
+        $config_content = $url.'?deviceid='.$this->_get('deviceid').','.$printinfo['print_name'];
         $zip  = new  ZipArchive ;
         $zipfile = $_SERVER['DOCUMENT_ROOT'].'/upload/print.zip';
         $formfile = $_SERVER['DOCUMENT_ROOT'].'/upload/form.exe';
