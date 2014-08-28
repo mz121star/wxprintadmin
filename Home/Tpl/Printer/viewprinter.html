@@ -70,19 +70,19 @@
 <div class="main">
     <div class="left">
         <div class="lunbo">
-             <img src="/ueditor/php/upload/image/20140828/1409218703558231.jpg" style=" " title="1409218703558231.jpg"/>
-            <img src="/ueditor/php/upload/image/20140828/1409218707105122.jpg" style=" " title="1409218707105122.jpg"/>
-             <img src="/ueditor/php/upload/image/20140828/1409218708761364.jpg" style=" " title="1409218708761364.jpg"/>
+            <foreach name="printlist" item="listitem">
+             <img src="{$listitem}" title="{$listitem}"/>
+             </foreach>
         </div>
     </div>
     <div class="right">
         <div class="rtop">
-            <img class="code" alt="140x140" src="/ueditor/php/upload/image/20140828/1409222661697219.jpg"   /> <div class="label"> 扫描加关注！</div>
+            <img class="code" alt="扫描加关注" src="/upload/{$printinfo.print_imgcode}" width="258" height="258"/> <div class="label"> 扫描加关注！</div>
         </div>
         <div class="rbottom">
             <h4 style="color:red">聚优客微信打印机</h4>
             <h4>http://wx.dlwebs.com</h4>
-            <p>聚优客微信打印机软件平台，可以管理多台照片打印机设备，是微信加粉必备神器！</p>
+            <p>{$printinfo.print_msg}</p>
             <div class="yzm">
                 <p>验证码</p>
                 <input  type="text" id="yzmcode" value=" " >

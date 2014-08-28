@@ -11,7 +11,7 @@ $private_config = array(
                                                   'modprinter/:pid' => 'Printer/modprinter',
                                                   'delprinter/:pid' => 'Printer/delprinter',
                                                   'viewprinter/:pid' => 'Printer/viewprinter',
-                                                  'downprinter/:pid/:deviceid' => 'Printer/downprinter'
+                                                  'downprinter/:pid/:deviceid/:hs' => 'Printer/downprinter'
                                                   )
                         );
 
