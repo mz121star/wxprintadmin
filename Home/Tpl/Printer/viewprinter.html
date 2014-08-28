@@ -56,14 +56,15 @@
 <script>
     var pics=$(".lunbo li");
     var i;
-    while(true){
-        i==pics.length?i=0:i++
+
+
         setInterval(function(){
+            i==pics.length?i=0:i++
             $(pics).hide();
             pics[i].show(2000);
 
         },10000);// 注意函数名没有引号和括弧！
-    }
+
 
 
 </script>
