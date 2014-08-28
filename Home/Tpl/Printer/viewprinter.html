@@ -49,6 +49,12 @@
           color: red;
 
       }
+      .label{
+          text-align: center;
+          color: #fff;
+          background-color: red;
+          font-size: 30px;
+      }
   </style>
 
 
@@ -70,7 +76,7 @@
     </div>
     <div class="right">
         <div class="rtop">
-            <img class="code" alt="140x140" src="/ueditor/php/upload/image/20140828/1409222661697219.jpg"   /> <span class="label"> 扫描加关注！</span>
+            <img class="code" alt="140x140" src="/ueditor/php/upload/image/20140828/1409222661697219.jpg"   /> <div class="label"> 扫描加关注！</div>
         </div>
         <div class="rbottom">
             <h4 style="color:red">聚优客微信打印机</h4>
@@ -78,7 +84,7 @@
             <p>聚优客微信打印机软件平台，可以管理多台照片打印机设备，是微信加粉必备神器！</p>
             <div class="yzm">
                 <p>验证码</p>
-                <input  type="text" value="B12001" >
+                <input  type="text" id="yzmcode" value="B12001" >
             </div>
         </div>
     </div>
@@ -92,11 +98,14 @@
 <script src="/js/bootstrap.min.js"></script>
 
 <script>
+
+    /***
+     * 图片轮播
+     * @type {*|jQuery|HTMLElement}
+     */
     var pics=$(".lunbo img");
     var i=0;
-
-
-        setInterval(function(){
+     setInterval(function(){
             i==pics.length-1?i=0:i++;
             $(pics).hide();
             $(pics[i]).show(500);
@@ -104,8 +113,22 @@
 
 
         },5000);// 注意函数名没有引号和括弧！
+    var chars = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
-
+    function generateMixed(n) {
+        var res = "";
+        for(var i = 0; i < n ; i ++) {
+            var id = Math.ceil(Math.random()*35);
+            res += chars[id];
+        }
+        return res;
+    }
+    var usecode=true;
+    setInterval(function(){
+       if(usecode){
+           $("#yzmcode").val("B1"+generateMixed(6))
+       }
+    },1000);
 
 
 </script>
