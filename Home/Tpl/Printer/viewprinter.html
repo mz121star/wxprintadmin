@@ -15,48 +15,7 @@
     <!-- Bootstrap core CSS -->
 <!--    <link href="/css/bootstrap.min.css" rel="stylesheet">-->
 
-  <style>
-      .left {
-          width: 70%;
-          top: 0px;
-          float: left;
-          height: 100%;
-          position: absolute;
-      }
-      .right {
-          width: 28%;
-          /* border: 1px solid #aa2a4b; */
-          height: 100%;
-          float: right;
-          position: fixed;
-          right: 0;
-          top: 0px;
-      }
-      .lunbo {
-          list-style: none;
-          float: left;
-          position: relative;
-          width: 100%;
-          height: 100%;
-          /* position: fixed; */
-      }
-
-      .lunbo {list-style: none; float: left;  position: relative;width: 100%}
-      .lunbo img{height: 100% ;width: 100%;display: inline-block;float: left}
-      .code{width: 100%;height: 100%}
-      .yzm input {
-          line-height: 30px;
-          font-size: 24px;
-          color: red;
-
-      }
-      .label{
-          text-align: center;
-          color: #fff;
-          background-color: red;
-          font-size: 30px;
-      }
-  </style>
+    <link  href="/css/horizontal.css" rel="stylesheet" id="hs">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -138,6 +97,10 @@
        }
     },1000);
 
+    var hs=$.getUrlParam("hs");
+    if(hs==2){
+        $("#hs").attr("href","/css/vertical.css")
+    }
 
 </script>
 </body>
