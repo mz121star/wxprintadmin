@@ -10,8 +10,8 @@ $private_config = array(
                         'URL_ROUTE_RULES' => array(
                                                   'modprinter/:pid' => 'Printer/modprinter',
                                                   'delprinter/:pid' => 'Printer/delprinter',
-                                                  'viewprinter/:pid/:deviceid' => 'Printer/viewprinter',
-                                                  'downprinter/:pid' => 'Printer/downprinter'
+                                                  'viewprinter/:pid' => 'Printer/viewprinter',
+                                                  'downprinter/:pid/:deviceid' => 'Printer/downprinter'
                                                   )
                         );
 
