@@ -15,11 +15,13 @@
     <!-- Bootstrap core CSS -->
 <!--    <link href="/css/bootstrap.min.css" rel="stylesheet">-->
   <style>
+      .left{width: 70%;border: 1px solid #aa2a4b;height: 100%;float: left  }
+      .right{width: 25%;border: 1px solid #aa2a4b;height: 100% ;float: left  }
       .lunbo{}
 
-      .lunbo li{list-style: none; float: left;  position: absolute;}
-      .lunbo li img{height: 400px ;width: 400px}
-      .2code{width: 100%;height: 100%}
+      .lunbo li{list-style: none; float: left;  position: relative;width: 100%}
+      .lunbo li img{height: 100% ;width: 100%;}
+      .code{width: 100%;height: 100%}
   </style>
 
 
@@ -31,22 +33,24 @@
 </head>
 
 <body>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="lunbo">
-                <li><img src="/ueditor/php/upload/image/20140828/1409218703558231.jpg" style="" title="1409218703558231.jpg"/></li>
-                <li><img src="/ueditor/php/upload/image/20140828/1409218707105122.jpg" style="" title="1409218707105122.jpg"/></li>
-                <li><img src="/ueditor/php/upload/image/20140828/1409218708761364.jpg" style="" title="1409218708761364.jpg"/></li>
-            </div>
-
+<div class="main">
+    <div class="left">
+        <div class="lunbo">
+            <li><img src="/ueditor/php/upload/image/20140828/1409218703558231.jpg" style="display: none" title="1409218703558231.jpg"/></li>
+            <li><img src="/ueditor/php/upload/image/20140828/1409218707105122.jpg" style="display: none" title="1409218707105122.jpg"/></li>
+            <li><img src="/ueditor/php/upload/image/20140828/1409218708761364.jpg" style="display: none" title="1409218708761364.jpg"/></li>
         </div>
-        <div class="col-md-4">
-            <img class="2code" alt="140x140" src="/ueditor/php/upload/image/20140828/1409222661697219.jpg"   /> <span class="label">文字标签</span>
+    </div>
+    <div class="right">
+        <div class="rtop">
+            <img class="code" alt="140x140" src="/ueditor/php/upload/image/20140828/1409222661697219.jpg"   /> <span class="label">文字标签</span>
+        </div>
+        <div class="rbottom">
+            <h4>微信打印机</h4>
         </div>
     </div>
 </div>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
