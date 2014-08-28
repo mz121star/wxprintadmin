@@ -4,6 +4,7 @@
         <thead>
           <tr>
             <th>设备名称</th>
+            <th>打印数量</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -11,6 +12,7 @@
         <foreach name="printlist" item="printer">
           <tr>
             <td class="col-sm-2">{$printer.print_name}</td>
+             <td class="col-sm-2">768</td>
             <td class="col-sm-2">
                 <a href="__GROUP__/viewprinter/{$printer.id}?deviceid={$printer.print_name}" target="_blank">预览</a>
                 <a href="__GROUP__/downprinter/{$printer.id}/{$printer.print_name}">下载</a>
