@@ -99,7 +99,14 @@
 <script src="/js/bootstrap.min.js"></script>
 
 <script>
-
+    (function($){
+        $.getUrlParam = function(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r!=null) return decodeURIComponent(r[2]); return null;
+        }
+    })(jQuery);
     /***
      * 图片轮播
      * @type {*|jQuery|HTMLElement}
@@ -127,7 +134,7 @@
     var usecode=true;
     setInterval(function(){
        if(usecode){
-           $("#yzmcode").val("B1"+generateMixed(6))
+           $("#yzmcode").val($.getUrlParam('deviceid')+generateMixed(6))
        }
     },1000);
 
