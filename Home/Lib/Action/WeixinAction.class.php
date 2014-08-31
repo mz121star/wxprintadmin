@@ -30,7 +30,7 @@ class WeixinAction extends Action {
               /*  $result = $this->receiveText($this -> data);
                 break;*/
             case "image":
-                $result = $this->receiveImage( $this -> data[0]);
+                $result = $this->receiveImage( $this -> data);
                 break;
         }
         echo $result;
@@ -39,7 +39,7 @@ class WeixinAction extends Action {
     //接收图片消息
     private function receiveImage($object)
     {
-
+          return var_dump($object[0]);
         // $content = array();
         $picurl= $object->PicUrl;
         $fromuser=$object->FromUserName;
