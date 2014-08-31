@@ -12,7 +12,7 @@ $private_config = array(
                                                   'delprinter/:pid' => 'Printer/delprinter',
                                                   'viewprinter/:pid' => 'Printer/viewprinter',
                                                   'downprinter/:pid/:deviceid/:hs' => 'Printer/downprinter',
-                                                    'api/:token'        => 'Home/Weiwin/index',
+                                                    'api/:token'        => 'Home/Weixin/index',
                                                   )
                         );
 
