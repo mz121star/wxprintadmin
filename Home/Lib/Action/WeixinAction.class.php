@@ -47,7 +47,7 @@ class WeixinAction extends Action {
        /* $wcHelper=new wechatHelper();
         $wcHelper->inserPic($fromuser,$picurl);*/
         $content = array();
-        $content[] = array("Title"=>"图片上传成功",  "Description"=>"图片上传成功，接下来可以打印此图片", "PicUrl"=>$object->PicUrl, "Url" =>"http://print.wx.dlwebs.com/zoom.php?id=".$fromuser );
+        $content[] = array("Title"=>"图片上传成功",  "Description"=>"图片上传成功，接下来可以打印此图片", "PicUrl"=>$object->PicUrl, "Url" =>"http://print.wx.dlwebs.com/zoom.php?id=".$object->FromUserName);
 
         $result = $this->transmitNews($object, $content);
         return $result;
