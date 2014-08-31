@@ -41,7 +41,7 @@ class WeixinAction extends Action {
     {
         $content = array("MediaId"=>$object->MediaId);
         // $content = array();
-        $picurl= $object->PicUrl;
+        $picurl= $object['PicUrl'];
         $fromuser=$object->FromUserName;
        /* $wcHelper=new wechatHelper();
         $wcHelper->inserPic($fromuser,$picurl);*/
