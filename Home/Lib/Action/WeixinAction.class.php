@@ -1,6 +1,6 @@
 <?php
 
-class WeixinAction extends Action {
+class WeiwinAction extends Action {
     private $token;
     private $fun;
     private $data = array();
