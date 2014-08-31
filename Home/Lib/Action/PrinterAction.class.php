@@ -54,8 +54,18 @@ class PrinterAction extends PublicAction {
             $this->error('下载失败', 'lists') ;
         }
     }
+   public    function randomkeys($length)
+{
+    $pattern='1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLOMNOPQRSTUVWXYZ';
+    for($i=0;$i<$length;$i++)
+    {
+        $key .= $pattern{mt_rand(0,35)};    //生成php随机数
+    }
+    return $key;
+}
 
     public function showadd(){
+        $this->assign('tokencode',$this->randomkeys(10));
         $this->display();
     }
     
