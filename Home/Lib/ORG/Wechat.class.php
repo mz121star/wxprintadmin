@@ -5,6 +5,7 @@ class Wechat {
 
 
 	public function __construct($token){
+        echo '11111' ;exit;
 		$this->auth($token) || exit;
 		if(IS_GET){
 			echo($_GET['echostr']);exit;

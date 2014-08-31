@@ -20,7 +20,7 @@ class WeixinAction extends Action {
             exit('error token');
         }
 
-        echo 123 ;exit;
+
          $weixin = new Wechat($this -> token);
          $data = $weixin -> request();
          $this -> data = $weixin -> request();
