@@ -39,7 +39,7 @@ class WeixinAction extends Action {
     //接收图片消息
     private function receiveImage($object)
     {
-
+           echo var_dump($object);exit;
         // $content = array();
 
        /* $wcHelper=new wechatHelper();
