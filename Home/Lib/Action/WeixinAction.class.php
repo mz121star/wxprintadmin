@@ -78,7 +78,7 @@ class WeixinAction extends Action {
 $item_str</Articles>
 </xml>";
 
-        $result = sprintf($xmlTpl, $object->FromUserName, $object->ToUserName, time(), count($newsArray));
+        $result = sprintf($xmlTpl, $object['FromUserName'], $object['ToUserName'], time(), count($newsArray));
         return $result;
     }
 
