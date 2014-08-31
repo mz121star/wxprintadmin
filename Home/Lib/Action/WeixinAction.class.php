@@ -19,7 +19,12 @@ class WeixinAction extends Action {
         if(!preg_match("/^[0-9a-zA-Z]{3,42}$/", $this -> token)){
             exit('error token');
         }
-       // $weixin = new Wechat($this -> token);
+
+        echo 123 ;exit;
+         $weixin = new Wechat($this -> token);
+         $data = $weixin -> request();
+         $this -> data = $weixin -> request();
+
     }
 
 }
