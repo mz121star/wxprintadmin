@@ -4,7 +4,8 @@ class PrintsetAction extends Action {
 
     public function zoom(){
         import("@.ORG.imageHelper");
-         $picurl=$this->_get("picurl");
+         $uid=$this->_get("picurl");
+        $picurl=$_GET("picurl");
       /*  $wcHelper=new wechatHelper();
         $fromuser= $_GET["id"];
         //  echo "执行getPicByUID:".date("Y-m-d H:i:s",time());
