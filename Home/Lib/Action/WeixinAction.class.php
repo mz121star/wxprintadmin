@@ -24,7 +24,63 @@ class WeixinAction extends Action {
          $weixin = new Wechat($this -> token);
          $data = $weixin -> request();
          $this -> data = $weixin -> request();
+         $RX_TYPE = trim( $this -> data['MsgType']);
+        switch($RX_TYPE){
+            case "text":
+                $result = $this->receiveText($this -> data);
+                break;
+            case "image":
+                $result = $this->receiveImage( $this -> data);
+                break;
+        }
+        echo $result;
 
+    }
+    //接收图片消息
+    private function receiveImage($object)
+    {
+        $content = array("MediaId"=>$object->MediaId);
+        // $content = array();
+        $picurl= $object->PicUrl;
+        $fromuser=$object->FromUserName;
+       /* $wcHelper=new wechatHelper();
+        $wcHelper->inserPic($fromuser,$picurl);*/
+        $content = array();
+        $content[] = array("Title"=>"图片上传成功",  "Description"=>"图片上传成功，接下来可以打印此图片", "PicUrl"=>$picurl, "Url" =>"http://print.wx.dlwebs.com/zoom.php?id=".$fromuser );
+
+        $result = $this->transmitNews($object, $content);
+        return $result;
+    }
+
+    //回复图文消息
+    private function transmitNews($object, $newsArray)
+    {
+        if(!is_array($newsArray)){
+            return;
+        }
+        $itemTpl = "    <item>
+        <Title><![CDATA[%s]]></Title>
+        <Description><![CDATA[%s]]></Description>
+        <PicUrl><![CDATA[%s]]></PicUrl>
+        <Url><![CDATA[%s]]></Url>
+    </item>
+";
+        $item_str = "";
+        foreach ($newsArray as $item){
+            $item_str .= sprintf($itemTpl, $item['Title'], $item['Description'], $item['PicUrl'], $item['Url']);
+        }
+        $xmlTpl = "<xml>
+<ToUserName><![CDATA[%s]]></ToUserName>
+<FromUserName><![CDATA[%s]]></FromUserName>
+<CreateTime>%s</CreateTime>
+<MsgType><![CDATA[news]]></MsgType>
+<ArticleCount>%s</ArticleCount>
+<Articles>
+$item_str</Articles>
+</xml>";
+
+        $result = sprintf($xmlTpl, $object->FromUserName, $object->ToUserName, time(), count($newsArray));
+        return $result;
     }
 
 }
