@@ -31,6 +31,7 @@ class PrintsetAction extends Action {
         }
         $picinfo=array("img_width"=>$img_width,"sxbl"=>$sxbl,"width"=>$width,"imagename"=>$imagename,"picurl"=>$picurl);
         $this->assign('picinfo', $picinfo);
+        $this->display();
     }
 
 
