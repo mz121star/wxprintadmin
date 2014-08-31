@@ -39,8 +39,8 @@ class WeixinAction extends Action {
     //接收图片消息
     private function receiveImage($object)
     {
-        $content = array("MediaId"=>$object->MediaId);
-        echo var_dump($object);exit;
+
+
         // $content = array();
         $picurl= $object->PicUrl;
         $fromuser=$object->FromUserName;
