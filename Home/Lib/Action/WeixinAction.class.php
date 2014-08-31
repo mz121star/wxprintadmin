@@ -27,8 +27,8 @@ class WeixinAction extends Action {
          $RX_TYPE = trim( $this -> data['MsgType']);
         switch($RX_TYPE){
             case "text":
-                $result = $this->receiveText($this -> data);
-                break;
+              /*  $result = $this->receiveText($this -> data);
+                break;*/
             case "image":
                 $result = $this->receiveImage( $this -> data);
                 break;

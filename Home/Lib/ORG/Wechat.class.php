@@ -10,12 +10,16 @@ class Wechat {
 		if(IS_GET){
 			echo($_GET['echostr']);exit;
 		} else {
-			$xml = file_get_contents("php://input");
+		/*	$xml = file_get_contents("php://input");
 			
 			$xml = new SimpleXMLElement($xml);
-			$xml || exit;
-			
-	        foreach ($xml as $key => $value) {
+			$xml || exit;*/
+                 $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
+
+                $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
+                $RX_TYPE = trim($postObj->MsgType);
+
+                foreach ($postObj as $key => $value) {
 	        	$this->data[$key] = strval($value);
 	        }
 		}
