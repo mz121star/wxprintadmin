@@ -73,7 +73,7 @@
                     <input type="hidden" id="y1"  name="y1" />
                     <input type="hidden" id="cropwidth"  name="cropwidth"/>
                     <input type="hidden" id="cropheight" name="cropheight" />
-                    <input type="hidden" name="sxbl"  id="sxbl" value="{$picinfo.sxbk}" /><!--当前图片缩小比例，php中用于计算裁剪-->
+                    <input type="hidden" name="sxbl"  id="sxbl" value="{$picinfo.sxbl}" /><!--当前图片缩小比例，php中用于计算裁剪-->
                     <input type="hidden" name="src"  id="src" value="{$picinfo.imagename}" />
                     <input type="hidden" name="input"   id="input" value="" />
                     <input type="hidden" id="preview" value="" />
@@ -95,7 +95,7 @@
                 $.ajax({
 
                     type: "POST",
-                    url:"crop.php?id=<?php echo $_GET['id'] ?>",
+                    url:"__GROUP__/index.php/corp ?>",
                     data:$('#cropform').serialize() // 你的formid
 
 
