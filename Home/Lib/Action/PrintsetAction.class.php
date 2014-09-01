@@ -108,6 +108,7 @@ class PrintsetAction extends Action {
         $info= M('printlist')->where(array("uid"=>$uid))->find();
 
         $info['issend'] = 1;
+        $info['code'] = "";
         M('printlist')->save($info);
         echo "完成打印";
     }

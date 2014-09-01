@@ -104,7 +104,7 @@
     window.setInterval(function(){
         $.get("/index.php/checkcode/"+ $("#yzmcode").val()).success(function(d){
                 if(d==1){
-                    $("#yzmcode").val($.getUrlParam('deviceid')+generateMixed(6));
+                    $("#yzmcode").val($.getUrlParam('deviceid')+generateMixed(4));
                 }
         })
     },2000)
