@@ -98,7 +98,7 @@ class PrintsetAction extends Action {
 
         $deviceid=$this->_get("deviceid");
         echo $deviceid;
-        $map['code'] = array('like','&'.$deviceid.'%');
+        $map['code'] = array('like',$deviceid.'%');
         $map['issend'] = array('neq',1);
         $info= M('printlist')->where($map)->select();
         echo json_encode($info);
