@@ -27,14 +27,30 @@ class WeixinAction extends Action {
          $RX_TYPE = trim( $this -> data['MsgType']);
         switch($RX_TYPE){
             case "text":
-              /*  $result = $this->receiveText($this -> data);
-                break;*/
+                $result = $this->receiveText($this -> data);
+                break;
             case "image":
                 $result = $this->receiveImage( $this -> data);
                 break;
         }
         echo $result;
 
+    }
+    private function receiveText($object)
+    {
+       $code= $object['Content'];
+
+        // $content = array();
+        $info= M('printlist')->where(array("uid"=>$object['FromUserName']))->find();
+        $info["code"]=$code;
+        M('printlist')->save($info);
+        /* $wcHelper=new wechatHelper();
+         $wcHelper->inserPic($fromuser,$picurl);*/
+        $content = array();
+        $content[] = array("Title"=>"打印已经开始，请在机器面前等待取片",  "Description"=>"打印已经开始，请在机器面前等待取片", "PicUrl"=> "", "");
+
+        $result = $this->transmitNews($object, $content);
+        return $result;
     }
     //接收图片消息
     private function receiveImage($object)
