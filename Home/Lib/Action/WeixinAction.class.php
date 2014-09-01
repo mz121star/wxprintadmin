@@ -42,15 +42,18 @@ class WeixinAction extends Action {
 
         // $content = array();
         $info= M('printlist')->where(array("uid"=>$object['FromUserName']))->find();
-        $info["code"]=$code;
-        M('printlist')->save($info);
-        /* $wcHelper=new wechatHelper();
-         $wcHelper->inserPic($fromuser,$picurl);*/
-        $content = array();
-        $content[] = array("Title"=>"打印已经开始，请在机器面前等待取片",  "Description"=>"打印已经开始，请在机器面前等待取片", "PicUrl"=> "", "");
+        if($info){
+            $info["code"]=$code;
+            M('printlist')->save($info);
+            /* $wcHelper=new wechatHelper();
+             $wcHelper->inserPic($fromuser,$picurl);*/
+            $content = array();
+            $content[] = array("Title"=>"打印已经开始，请在机器面前等待取片",  "Description"=>"打印已经开始，请在机器面前等待取片", "PicUrl"=> "", "");
 
-        $result = $this->transmitNews($object, $content);
-        return $result;
+            $result = $this->transmitNews($object, $content);
+            return $result;
+        }
+
     }
     //接收图片消息
     private function receiveImage($object)
