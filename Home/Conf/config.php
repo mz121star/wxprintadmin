@@ -13,7 +13,7 @@ $private_config = array(
                                                   'viewprinter/:pid' => 'Printer/viewprinter',
                                                   'downprinter/:pid/:deviceid/:hs' => 'Printer/downprinter',
                                                     'api/:token'        => 'Home/Weixin/index',
-                                                    'zoom/:uid'  => 'Home/Printset/zoom',
+                                                    'zoom/:uid'  => 'Printset/zoom',
                                                   )
                         );
 
