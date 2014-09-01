@@ -15,6 +15,7 @@ $private_config = array(
                                                     'api/:token'        => 'Home/Weixin/index',
                                                     'zoom/:uid'  => 'Printset/zoom',
                                                    'print/:deviceid'=>'Printset/getpics',
+                                                     'printend/:uid'=>'Printset/printend',
                                                   )
                         );
 

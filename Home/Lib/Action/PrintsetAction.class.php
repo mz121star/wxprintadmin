@@ -103,6 +103,14 @@ class PrintsetAction extends Action {
         $info= M('printlist')->where($map)->select();
         echo json_encode($info);
     }
+    public  function  printend(){
+        $uid=$this->_get("uid");
+        $info= M('printlist')->where(array("uid"=>$uid))->find();
+
+        $info['issend'] = 1;
+        M('printlist')->save($info);
+        echo "完成打印";
+    }
 
 
 }
