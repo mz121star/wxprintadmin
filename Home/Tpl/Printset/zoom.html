@@ -102,7 +102,7 @@
                 }).success(function(d){
                     $("h1").html("裁剪完成，请回到微信输入验证码进行打印！")
                     $("#cropbox").hide();
-                    $("#status").html("裁剪完成<img width='300' src='/uploads/"+d+"' />") ;
+                    $("#status").html("<p style='color: red'>裁剪完成,请回到微信输入验证码进行打印</p> <img width='300' src='/uploads/"+d+"' />") ;
                 })
             };
         })

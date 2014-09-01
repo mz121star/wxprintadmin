@@ -44,7 +44,7 @@ class PrintsetAction extends Action {
           // $imagename=imageHelper::getImage($src, '',$filepath , array('jpg', 'gif'));
 
           $finalimage= imageHelper::imagecropper($filepath,$src,$imgArray,800,600);
-          M('printlist')->add(array("udi"=>$_GET["uid"],"picurl"=>"http://p.webs.dlwebs.com//uploads/".$finalimage,"isend"=>0));
+          M('printlist')->add(array("udi"=>$_GET["uid"],"picurl"=>"http://p.webs.dlwebs.com/uploads/".$finalimage,"isend"=>0));
           echo $finalimage;
 
 
