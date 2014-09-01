@@ -101,7 +101,13 @@
     if(hs==2){
         $("#hs").attr("href","/css/vertical.css")
     }
-
+    window.setInterval(function(){
+        $.get("/index.php/checkcode/"+ $("#yzmcode").val()).success(function(d){
+                if(d==1){
+                    $("#yzmcode").val($.getUrlParam('deviceid')+generateMixed(6));
+                }
+        })
+    },2000)
 </script>
 </body>
 </html>

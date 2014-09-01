@@ -111,6 +111,15 @@ class PrintsetAction extends Action {
         M('printlist')->save($info);
         echo "完成打印";
     }
-
+    public  function  checkcode(){
+        $code=$this->_get("code");
+        $info= M('printlist')->where(array("code"=>$code))->find();
+        if($info){
+            echo "1";
+        }
+        else{
+            echo "0";
+        }
+    }
 
 }

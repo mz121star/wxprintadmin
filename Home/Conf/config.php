@@ -16,6 +16,7 @@ $private_config = array(
                                                     'zoom/:uid'  => 'Printset/zoom',
                                                    'print/:deviceid'=>'Printset/getpics',
                                                      'printend/:uid'=>'Printset/printend',
+                                                     'checkcode/:code'=>'Printset/checkcode',
                                                   )
                         );
 
