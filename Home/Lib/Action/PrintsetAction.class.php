@@ -95,7 +95,9 @@ class PrintsetAction extends Action {
 
     }
     public  function getpics(){
+
         $deviceid=$this->_get("deviceid");
+        echo $deviceid;
         $map['code'] = array('like','&'.$deviceid.'%');
         $map['issend'] = array('neq',1);
         $info= M('printlist')->where($map)->select();
