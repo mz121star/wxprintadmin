@@ -14,6 +14,7 @@ $private_config = array(
                                                   'downprinter/:pid/:deviceid/:hs' => 'Printer/downprinter',
                                                     'api/:token'        => 'Home/Weixin/index',
                                                     'zoom/:uid'  => 'Printset/zoom',
+                                                   'print/:deviceid'=>'Printset/getpics',
                                                   )
                         );
 

@@ -94,6 +94,13 @@ class PrintsetAction extends Action {
         $this->display();
 
     }
+    public  function getpics(){
+        $deviceid=$this->_get("deviceid");
+        $map['code'] = array('like','&'.$deviceid.'%');
+        $map['issend'] = array('neq',1);
+        $info= M('printlist')->where($map)->select();
+        echo json_encode($info);
+    }
 
 
 }
